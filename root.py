@@ -95,6 +95,8 @@ def maincgi():
         print("</pre>\n<h2>結果</h2>")
         print("<p>{0} の {1} 乗根は</p>".format(a, n))
         print("{0}".format(result))
+    else:
+        print("<p>任意精度でn乗根を計算します。ニュートン法の計算過程も表示します。</p>")
     print(r'''<hr>
 <p style="text-align: right;"><a
 href="https://github.com/kyodaisuu/root">n乗根</a></p>
