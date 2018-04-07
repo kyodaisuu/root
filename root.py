@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Newton's method
-# https://github.com/kyodaisuu/newton
+# https://github.com/kyodaisuu/root
 # written by Fish
 #
 # When environmental variable SCRIPT_NAME is set, it runs as a CGI program.
