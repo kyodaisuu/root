@@ -1,2 +1,4 @@
-# root
-Calculate n-th root with arbitrary precision
+# n乗根
+任意精度でn乗根を計算します。ニュートン法の計算過程を表示します。
+
+[オンラインバージョン](http://gyafun.jp/ln/root.cgi)
