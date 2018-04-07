@@ -61,6 +61,8 @@ def maincgi():
         n = 2
     if p.isdigit() == False or int(p) < 5:
         p = 20
+    if p.isdigit() and int(p) > maxprec:
+        p = maxprec
     # Write html
     print(r'''Content-Type: text/html
 
@@ -88,8 +90,6 @@ def maincgi():
             a = int(a)
         n = int(n)
         p = int(p)
-        if p > maxprec:
-            p = maxprec
         print("<h2>ニュートン法の計算過程</h2><pre>")
         result = root(a, n, p, True)
         print("</pre>\n<h2>結果</h2>")
