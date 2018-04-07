@@ -112,7 +112,7 @@ def root(a, n, p, showprocess):
     When showprocess = True, calculation process is shown.
     """
     aint = int(int(a * 10**15) * 10 ** (p*n-15))
-    prev = (int(a ** (1.0/n))+1) * 10 ** p
+    prev = (int((a+1) ** (1.0/n))+1) * 10 ** p
     if showprocess:
         print(num(prev, p))
     while True:
