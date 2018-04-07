@@ -60,7 +60,7 @@ def maincgi():
     if n.isdigit() == False:
         n = 2
     if p.isdigit() == False or int(p) < 5:
-        p = 20
+        p = str(20)
     if p.isdigit() and int(p) > maxprec:
         p = maxprec
     # Write html
