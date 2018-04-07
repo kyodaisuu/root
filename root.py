@@ -93,8 +93,9 @@ def maincgi():
         print("<h2>ニュートン法の計算過程</h2><pre>")
         result = root(a, n, p, True)
         print("</pre>\n<h2>結果</h2>")
-        print("<p>{0} の {1} 乗根は</p>".format(a, n))
-        print("{0}".format(result))
+        print(
+            '<p>{0} の {1} 乗根は</p>'.format(a, n))
+        print('<p style="word-wrap: break-word;">{0}</p>'.format(result))
     else:
         print("<p>任意精度でn乗根を計算します。ニュートン法の計算過程も表示します。</p>")
     print(r'''<hr>
